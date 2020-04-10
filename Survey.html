@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/surbeycss/survey.css">
+    <title>Survey</title>
+</head>
+<body>
+    <div id="background">
+        <header class="header">
+        <h1 id='title'class="text-center">Survey Form</h1>
+        <p id="description" class="description text-center" >Thank you for taking the time to fill the survey</p>
+    </header>
+
+    <form id="survey-form" class="container">
+        <div class="form-group">
+            <label id="name-label"  for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+            <label id="emai-label"  for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                  <label id="age-label"  for="age">Age<span class="clue">(optional)</span></label>
+            <input 
+            type="number" 
+            name="age" 
+            id="age"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age">
+            </div>
+            
+            <div class="form-group">
+              <p>what was the reason you call our custumer service?</p>
+              <select name="mood" id="dropdown" class="form-control" required>
+                  <option disabled selected value>Select an option</option>
+                  <option value="student">Pay bill.</option>
+                  <option value="job">Asking for instruction for one of the tools.</option>
+                  <option value="learner">Technical issues with electronic products.</option>
+                  <option value="preferno">Asking question about our offers.</option>
+                  <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+                <p>Did you have a satisfying experience with our support?</p>
+                <label>
+                    <input 
+                    name="user-recommand"
+                    value="Definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked/>Definitely</label>
+                <label>
+                    <input 
+                    name="user-recommand"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                    />Maybe</label>
+                <label>
+                    <input 
+                    name="user-recommand"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                    />Not-sure</label>
+            </div>
+          
+            <div class="form-group">
+                <p>
+                How did you hear about us?             
+                </p>
+                <select name="most-like" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Facebook</option>
+                    <option value="projects">Twitter</option>
+                    <option value="community">Family member</option>
+                    <option value="source">Friends</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+
+                <div class="form-group">
+                    <p>
+                    What is you Favorite Pet?
+                    <span class="clue">(random question)</span</p>
+
+                    <label>
+                        <input 
+                        type="checkbox"
+                        name="prfer"
+                        value="cat"
+                        class="input-checkbox">Cats</label>
+                    
+                    <label>
+                        <input 
+                        type="checkbox"
+                        name="prfer"
+                        value="dog"
+                        class="input-checkbox">Dogs</label>
+                    
+                    <label>
+                        <input 
+                        type="checkbox"
+                        name="prfer"
+                        value="pig"
+                        class="input-checkbox">Pigs</label>
+                    
+                    <label>
+                        <input 
+                        type="checkbox"
+                        name="prfer"
+                        value="snake"
+                        class="input-checkbox">Snake</label>
+                    </div>
+
+                    <div class="form-group">
+                        <p>
+                        Any comments or suggestions?
+                        </p>
+                        <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here.."></textarea>
+                    </div>
+
+                    <div class="from-group">
+                        <button type="submit" id="submit" class="submit-bt">Submit   
+                        </button>
+                    </div>
+    </form>
+    </div>
+    
+</body>
+</html>
